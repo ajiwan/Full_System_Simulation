@@ -1,0 +1,17 @@
+-p
+xc6slx45csg324-3
+-lang
+vhdl
+-intstyle
+default
+-lp
+C:/fpga/XPS/
+-msg
+__xps/ise/xmsgprops.lst
+-s
+mgm
+-X
+C:/Xilinx/14.2/ISE_DS/ISE/verilog/mti_se/10.1c/nt64
+-m
+behavioral
+system.mhs

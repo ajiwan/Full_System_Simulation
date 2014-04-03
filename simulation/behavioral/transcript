@@ -1,0 +1,2225 @@
+# Reading C:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do system_setup.do 
+# Setting up simulation commands ... 
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (system_setup.do) 
+# *** 
+# *** Because EDK did not create the testbench, the compile and load 
+# *** commands need changes to work with the user-generated testbench. 
+# *** For example, edit the testbench name in the vsim command. 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'system') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see system_wave.do) 
+# *** 
+# *** clk => generate clock input stimulus 
+# *** 
+# *** rst => toggle reset ports and simulate 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+c
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "load_bram_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "hdmi_out_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "disparity_out_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "clock_generator_0_v4_03_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module pxconv
+# 
+# Top level modules:
+# 	pxconv
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module PXBRAM
+# 
+# Top level modules:
+# 	PXBRAM
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module fifo
+# 
+# Top level modules:
+# 	fifo
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module Disp_Map_Calc
+# 
+# Top level modules:
+# 	Disp_Map_Calc
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Loading entity user_logic
+# -- Compiling entity load_bram
+# -- Compiling architecture IMP of load_bram
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module user_logic
+# 
+# Top level modules:
+# 	user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Loading entity soft_reset
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Compiling entity hdmi_out
+# -- Compiling architecture IMP of hdmi_out
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module convert_30to15_fifo
+# 
+# Top level modules:
+# 	convert_30to15_fifo
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module DRAM16XN
+# 
+# Top level modules:
+# 	DRAM16XN
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module dvi_encoder
+# 
+# Top level modules:
+# 	dvi_encoder
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module dvi_out_native
+# 
+# Top level modules:
+# 	dvi_out_native
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module encode
+# 
+# Top level modules:
+# 	encode
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module serdes_n_to_1
+# 
+# Top level modules:
+# 	serdes_n_to_1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module hdmi_core
+# 
+# Top level modules:
+# 	hdmi_core
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module fill_fifo_fsm
+# 
+# Top level modules:
+# 	fill_fifo_fsm
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module pulse_gen
+# 
+# Top level modules:
+# 	pulse_gen
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Loading entity soft_reset
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Loading entity user_logic
+# -- Compiling entity disparity_out
+# -- Compiling architecture IMP of disparity_out
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity async_fifo_32_256
+# -- Compiling architecture async_fifo_32_256_a of async_fifo_32_256
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity fifo_generator_v9_2_bhv_as
+# -- Loading entity fifo_generator_v9_2_bhv_ss
+# -- Loading entity fifo_generator_v9_2_conv
+# -- Loading entity fifo_generator_v9_2
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity clock_generator
+# -- Compiling architecture STRUCTURE of clock_generator
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_proc_sys_reset_0_wrapper
+# -- Compiling architecture STRUCTURE of system_proc_sys_reset_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_pll_module_0_wrapper
+# -- Compiling architecture STRUCTURE of system_pll_module_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_load_bram_0_wrapper
+# -- Compiling architecture STRUCTURE of system_load_bram_0_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module system_hdmi_out_0_wrapper
+# 
+# Top level modules:
+# 	system_hdmi_out_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_disparity_out_0_wrapper
+# -- Compiling architecture STRUCTURE of system_disparity_out_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_clock_generator_0_wrapper
+# -- Compiling architecture STRUCTURE of system_clock_generator_0_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module system_axi4_0_wrapper
+# 
+# Top level modules:
+# 	system_axi4_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_rs232_uart_1_wrapper
+# -- Compiling architecture STRUCTURE of system_rs232_uart_1_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module system_mcb_ddr2_wrapper
+# 
+# Top level modules:
+# 	system_mcb_ddr2_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system
+# -- Compiling architecture STRUCTURE of system
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module glbl
+# 
+# Top level modules:
+# 	glbl
+# 1
+s
+# vsim +notimingchecks -L xilinxcorelib_ver -L secureip -L unisims_ver -L unimacro_ver -t ps -novopt system glbl 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading unisim.vcomponents
+# Loading work.system(structure)
+# Loading work.glbl
+# Loading work.system_proc_sys_reset_0_wrapper(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading proc_sys_reset_v3_00_a.proc_sys_reset(imp)
+# Loading proc_sys_reset_v3_00_a.upcnt_n(imp)
+# Loading proc_sys_reset_v3_00_a.lpf(imp)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.srl16(srl16_v)
+# Loading proc_sys_reset_v3_00_a.sequence(imp)
+# Loading work.system_pll_module_0_wrapper(structure)
+# Loading ieee.numeric_std(body)
+# Loading pll_module_v2_00_a.pll_module(struct)
+# Loading unisim.pll_adv(pll_adv_v)
+# Loading unisim.bufg(bufg_v)
+# Loading work.system_load_bram_0_wrapper(structure)
+# Loading ieee.std_logic_unsigned(body)
+# Loading proc_common_v3_00_a.proc_common_pkg(body)
+# Loading proc_common_v3_00_a.ipif_pkg(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading proc_common_v3_00_a.family_support(body)
+# Loading load_bram_v1_00_a.load_bram(imp)
+# Loading axi_lite_ipif_v1_01_a.axi_lite_ipif(imp)
+# Loading axi_lite_ipif_v1_01_a.slave_attachment(imp)
+# Loading axi_lite_ipif_v1_01_a.address_decoder(imp)
+# Loading proc_common_v3_00_a.pselect_f(imp)
+# Loading axi_master_burst_v1_00_a.axi_master_burst(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_reset(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_cmd_status(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_first_stb_offset(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_stbs_set(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_wr_cntlr(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_pcc(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_strb_gen(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_addr_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rddata_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rdmux(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_status_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid_buf(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wrdata_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_status_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_fifo(imp)
+# Loading proc_common_v3_00_a.srl_fifo_f(imp)
+# Loading proc_common_v3_00_a.srl_fifo_rbu_f(imp)
+# Loading proc_common_v3_00_a.cntr_incr_decr_addn_f(imp)
+# Loading unisim.muxcy_l(muxcy_l_v)
+# Loading unisim.xorcy(xorcy_v)
+# Loading unisim.fds(fds_v)
+# Loading proc_common_v3_00_a.dynshreg_f(behavioral)
+# Loading unisim.srlc16e(srlc16e_v)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid2mm_buf(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_demux(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_llink(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_llink(implementation)
+# Loading load_bram_v1_00_a.user_logic(imp)
+# Loading load_bram_v1_00_a.fifo
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_2
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_2_CONV_VER
+# Loading xilinxcorelib_ver.fifo_generator_v9_2_bhv_ver_as
+# Loading xilinxcorelib_ver.fifo_generator_v9_2_sync_stage
+# Loading load_bram_v1_00_a.pxconv
+# Loading load_bram_v1_00_a.PXBRAM
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_mem_module
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_output_stage
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_softecc_output_reg_stage
+# Loading load_bram_v1_00_a.Disp_Map_Calc
+# Loading work.system_hdmi_out_0_wrapper
+# Loading hdmi_out_v1_00_a.hdmi_out(imp)
+# Loading proc_common_v3_00_a.soft_reset(implementation)
+# Loading unisim.fdrse(fdrse_v)
+# Loading hdmi_out_v1_00_a.user_logic
+# Loading hdmi_out_v1_00_a.fill_fifo_fsm
+# Loading hdmi_out_v1_00_a.hdmi_core
+# Loading hdmi_out_v1_00_a.pulse_gen
+# Loading hdmi_out_v1_00_a.dvi_out_native
+# Loading unisims_ver.BUFPLL
+# Loading hdmi_out_v1_00_a.dvi_encoder
+# Loading hdmi_out_v1_00_a.encode
+# Loading hdmi_out_v1_00_a.convert_30to15_fifo
+# Loading unisims_ver.FDC
+# Loading hdmi_out_v1_00_a.DRAM16XN
+# Loading unisims_ver.FDP
+# Loading unisims_ver.FD
+# Loading unisims_ver.FDR
+# Loading unisims_ver.FDRE
+# Loading unisims_ver.FDE
+# Loading hdmi_out_v1_00_a.serdes_n_to_1
+# Loading unisims_ver.OSERDES2
+# Loading unisims_ver.OBUFDS
+# Loading unisims_ver.RAM16X1D
+# Loading work.system_disparity_out_0_wrapper(structure)
+# Loading disparity_out_v1_00_a.disparity_out(imp)
+# Loading disparity_out_v1_00_a.user_logic(imp)
+# Loading disparity_out_v1_00_a.async_fifo_32_256(async_fifo_32_256_a)
+# Loading xilinxcorelib.fifo_generator_v9_2(behavioral)
+# Loading xilinxcorelib.fifo_generator_v9_2_conv(behavioral)
+# Loading xilinxcorelib.fifo_generator_v9_2_bhv_as(behavioral)
+# Loading work.system_clock_generator_0_wrapper(structure)
+# Loading clock_generator_0_v4_03_a.clock_generator(structure)
+# Loading clock_generator_v4_03_a.pll_module(struct)
+# Loading work.system_axi4_0_wrapper
+# Loading axi_interconnect_v1_06_a.axi_interconnect
+# Loading axi_interconnect_v1_06_a.ict106_register_slice_bank
+# Loading axi_interconnect_v1_06_a.ict106_protocol_conv_bank
+# Loading axi_interconnect_v1_06_a.ict106_converter_bank
+# Loading axi_interconnect_v1_06_a.ict106_data_fifo_bank
+# Loading axi_interconnect_v1_06_a.ict106_axi_crossbar
+# Loading axi_interconnect_v1_06_a.ict106_axi_register_slice
+# Loading axi_interconnect_v1_06_a.ict106_axic_register_slice
+# Loading axi_interconnect_v1_06_a.ict106_axi_clock_converter
+# Loading axi_interconnect_v1_06_a.ict106_axi_data_fifo
+# Loading axi_interconnect_v1_06_a.ict106_crossbar
+# Loading axi_interconnect_v1_06_a.ict106_axic_sample_cycle_ratio
+# Loading axi_interconnect_v1_06_a.ict106_axic_sync_clock_converter
+# Loading axi_interconnect_v1_06_a.ict106_si_transactor
+# Loading axi_interconnect_v1_06_a.ict106_splitter
+# Loading axi_interconnect_v1_06_a.ict106_wdata_router
+# Loading axi_interconnect_v1_06_a.ict106_axic_reg_srl_fifo
+# Loading axi_interconnect_v1_06_a.ict106_addr_decoder
+# Loading axi_interconnect_v1_06_a.ict106_wdata_mux
+# Loading axi_interconnect_v1_06_a.ict106_addr_arbiter
+# Loading axi_interconnect_v1_06_a.ict106_mux_enc
+# Loading axi_interconnect_v1_06_a.ict106_ndeep_srl
+# Loading unisims_ver.SRLC32E
+# Loading work.system_rs232_uart_1_wrapper(structure)
+# ** Error: (vsim-13) Recompile axi_uartlite_v1_02_a.axi_uartlite because proc_common_v3_00_a.ipif_pkg has changed.
+# 
+# ** Error: (vsim-13) Recompile axi_uartlite_v1_02_a.axi_uartlite(rtl) because proc_common_v3_00_a.ipif_pkg has changed.
+# 
+# Load interrupted
+# Error loading design
+# 1
+do system_setup.do
+# Setting up simulation commands ... 
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (system_setup.do) 
+# *** 
+# *** Because EDK did not create the testbench, the compile and load 
+# *** commands need changes to work with the user-generated testbench. 
+# *** For example, edit the testbench name in the vsim command. 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'system') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see system_wave.do) 
+# *** 
+# *** clk => generate clock input stimulus 
+# *** 
+# *** rst => toggle reset ports and simulate 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+c
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "load_bram_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "disparity_out_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "clock_generator_0_v4_03_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module pxconv
+# 
+# Top level modules:
+# 	pxconv
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module PXBRAM
+# 
+# Top level modules:
+# 	PXBRAM
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module fifo
+# 
+# Top level modules:
+# 	fifo
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module Disp_Map_Calc
+# 
+# Top level modules:
+# 	Disp_Map_Calc
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Loading entity user_logic
+# -- Compiling entity load_bram
+# -- Compiling architecture IMP of load_bram
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Loading entity soft_reset
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Loading entity user_logic
+# -- Compiling entity disparity_out
+# -- Compiling architecture IMP of disparity_out
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity async_fifo_32_256
+# -- Compiling architecture async_fifo_32_256_a of async_fifo_32_256
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity fifo_generator_v9_2_bhv_as
+# -- Loading entity fifo_generator_v9_2_bhv_ss
+# -- Loading entity fifo_generator_v9_2_conv
+# -- Loading entity fifo_generator_v9_2
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity clock_generator
+# -- Compiling architecture STRUCTURE of clock_generator
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_proc_sys_reset_0_wrapper
+# -- Compiling architecture STRUCTURE of system_proc_sys_reset_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_load_bram_0_wrapper
+# -- Compiling architecture STRUCTURE of system_load_bram_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_disparity_out_0_wrapper
+# -- Compiling architecture STRUCTURE of system_disparity_out_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_clock_generator_0_wrapper
+# -- Compiling architecture STRUCTURE of system_clock_generator_0_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module system_axi4_0_wrapper
+# 
+# Top level modules:
+# 	system_axi4_0_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module system_mcb_ddr2_wrapper
+# 
+# Top level modules:
+# 	system_mcb_ddr2_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system
+# -- Compiling architecture STRUCTURE of system
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module glbl
+# 
+# Top level modules:
+# 	glbl
+# 1
+s
+# vsim +notimingchecks -L xilinxcorelib_ver -L secureip -L unisims_ver -L unimacro_ver -t ps -novopt system glbl 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading unisim.vcomponents
+# Loading work.system(structure)
+# Loading work.glbl
+# Loading work.system_proc_sys_reset_0_wrapper(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading proc_sys_reset_v3_00_a.proc_sys_reset(imp)
+# Loading proc_sys_reset_v3_00_a.upcnt_n(imp)
+# Loading proc_sys_reset_v3_00_a.lpf(imp)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.srl16(srl16_v)
+# Loading proc_sys_reset_v3_00_a.sequence(imp)
+# Loading work.system_load_bram_0_wrapper(structure)
+# Loading ieee.std_logic_unsigned(body)
+# Loading proc_common_v3_00_a.proc_common_pkg(body)
+# Loading proc_common_v3_00_a.ipif_pkg(body)
+# Loading ieee.numeric_std(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading proc_common_v3_00_a.family_support(body)
+# Loading load_bram_v1_00_a.load_bram(imp)
+# Loading axi_lite_ipif_v1_01_a.axi_lite_ipif(imp)
+# Loading axi_lite_ipif_v1_01_a.slave_attachment(imp)
+# Loading axi_lite_ipif_v1_01_a.address_decoder(imp)
+# Loading proc_common_v3_00_a.pselect_f(imp)
+# Loading axi_master_burst_v1_00_a.axi_master_burst(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_reset(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_cmd_status(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_first_stb_offset(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_stbs_set(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_wr_cntlr(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_pcc(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_strb_gen(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_addr_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rddata_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rdmux(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_status_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid_buf(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wrdata_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_status_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_fifo(imp)
+# Loading proc_common_v3_00_a.srl_fifo_f(imp)
+# Loading proc_common_v3_00_a.srl_fifo_rbu_f(imp)
+# Loading proc_common_v3_00_a.cntr_incr_decr_addn_f(imp)
+# Loading unisim.muxcy_l(muxcy_l_v)
+# Loading unisim.xorcy(xorcy_v)
+# Loading unisim.fds(fds_v)
+# Loading proc_common_v3_00_a.dynshreg_f(behavioral)
+# Loading unisim.srlc16e(srlc16e_v)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid2mm_buf(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_demux(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_llink(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_llink(implementation)
+# Loading load_bram_v1_00_a.user_logic(imp)
+# Loading load_bram_v1_00_a.fifo
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_2
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_2_CONV_VER
+# Loading xilinxcorelib_ver.fifo_generator_v9_2_bhv_ver_as
+# Loading xilinxcorelib_ver.fifo_generator_v9_2_sync_stage
+# Loading load_bram_v1_00_a.pxconv
+# Loading load_bram_v1_00_a.PXBRAM
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_mem_module
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_output_stage
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_softecc_output_reg_stage
+# Loading load_bram_v1_00_a.Disp_Map_Calc
+# Loading work.system_disparity_out_0_wrapper(structure)
+# Loading disparity_out_v1_00_a.disparity_out(imp)
+# Loading proc_common_v3_00_a.soft_reset(implementation)
+# Loading unisim.fdrse(fdrse_v)
+# Loading disparity_out_v1_00_a.user_logic(imp)
+# Loading disparity_out_v1_00_a.async_fifo_32_256(async_fifo_32_256_a)
+# Loading xilinxcorelib.fifo_generator_v9_2(behavioral)
+# Loading xilinxcorelib.fifo_generator_v9_2_conv(behavioral)
+# Loading xilinxcorelib.fifo_generator_v9_2_bhv_as(behavioral)
+# Loading work.system_clock_generator_0_wrapper(structure)
+# Loading clock_generator_0_v4_03_a.clock_generator(structure)
+# Loading clock_generator_v4_03_a.pll_module(struct)
+# Loading unisim.pll_adv(pll_adv_v)
+# Loading unisim.bufg(bufg_v)
+# Loading work.system_axi4_0_wrapper
+# Loading axi_interconnect_v1_06_a.axi_interconnect
+# Loading axi_interconnect_v1_06_a.ict106_register_slice_bank
+# Loading axi_interconnect_v1_06_a.ict106_protocol_conv_bank
+# Loading axi_interconnect_v1_06_a.ict106_converter_bank
+# Loading axi_interconnect_v1_06_a.ict106_data_fifo_bank
+# Loading axi_interconnect_v1_06_a.ict106_axi_crossbar
+# Loading axi_interconnect_v1_06_a.ict106_axi_register_slice
+# Loading axi_interconnect_v1_06_a.ict106_axic_register_slice
+# Loading axi_interconnect_v1_06_a.ict106_axi_clock_converter
+# Loading axi_interconnect_v1_06_a.ict106_axi_data_fifo
+# Loading axi_interconnect_v1_06_a.ict106_crossbar
+# Loading axi_interconnect_v1_06_a.ict106_si_transactor
+# Loading axi_interconnect_v1_06_a.ict106_splitter
+# Loading axi_interconnect_v1_06_a.ict106_wdata_router
+# Loading axi_interconnect_v1_06_a.ict106_axic_reg_srl_fifo
+# Loading axi_interconnect_v1_06_a.ict106_addr_decoder
+# Loading axi_interconnect_v1_06_a.ict106_wdata_mux
+# Loading axi_interconnect_v1_06_a.ict106_addr_arbiter
+# Loading axi_interconnect_v1_06_a.ict106_mux_enc
+# Loading axi_interconnect_v1_06_a.ict106_ndeep_srl
+# Loading unisims_ver.SRLC32E
+# Loading work.system_mcb_ddr2_wrapper
+# Loading axi_s6_ddrx_v1_06_a.axi_s6_ddrx
+# Loading axi_s6_ddrx_v1_06_a.mcb_ui_top_synch
+# Loading axi_s6_ddrx_v1_06_a.mcb_ui_top
+# Loading axi_s6_ddrx_v1_06_a.mcb_raw_wrapper
+# Loading unisims_ver.MCB
+# Loading secureip.B_MCB
+# Loading unisims_ver.OSERDES2
+# Loading unisims_ver.OBUFT
+# Loading unisims_ver.OBUFTDS
+# Loading axi_s6_ddrx_v1_06_a.mcb_soft_calibration_top
+# Loading axi_s6_ddrx_v1_06_a.mcb_soft_calibration
+# Loading axi_s6_ddrx_v1_06_a.iodrp_controller
+# Loading axi_s6_ddrx_v1_06_a.iodrp_mcb_controller
+# Loading unisims_ver.IOBUF
+# Loading unisims_ver.IODRP2
+# Loading unisims_ver.IODRP2_MCB
+# Loading unisims_ver.IOBUFDS
+# Loading unisims_ver.PULLDOWN
+# Loading unisims_ver.PULLUP
+# Loading unisims_ver.BUFPLL_MCB
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_axi_register_slice
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_axic_register_slice
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_axi_upsizer
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_aw_channel
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_cmd_translator
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_incr_cmd
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_wrap_cmd
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_cmd_fsm
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_w_channel
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_b_channel
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_simple_fifo
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_ar_channel
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_r_channel
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_cmd_arbiter
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_a_upsizer
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_w_upsizer
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_r_upsizer
+# Loading unisims_ver.MUXCY
+# Loading unisims_ver.XORCY
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_carry_latch_and
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_carry_and
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_command_fifo
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_comparator_sel_static
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_carry_or
+# Loading unisims_ver.LUT6_2
+# Loading unisims_ver.LUT4
+# Loading unisims_ver.FDRE
+# Loading unisims_ver.LUT6
+# Loading unisims_ver.FDSE
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_comparator_sel
+# Loading unisims_ver.AND2B1L
+# Loading axi_s6_ddrx_v1_06_a.axi_mcb_carry_latch_or
+# Loading unisims_ver.OR2L
+# ** Warning: (vsim-8683) Uninitialized out port /system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_d(31 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_FIFO/U0/gconvfifo/inst_conv_fifo/DATA_COUNT(7 downto 0), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_FIFO/U0/DATA_COUNT(7 downto 0).
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /system/clock_generator_0/clock_generator_0/CLKFBOUT has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /system/clock_generator_0/clock_generator_0/PSDONE has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# 1
+w
+# Setting up Wave window display ... 
+# /
+# /system
+# -logic
+# -literal -hex
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# -logic
+# -literal -hex
+# /
+# Wave window display setup done. 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/fpga/XPS/Full_System/simulation/behavioral/wave.do
+do wave.do
+clk; rst; run 2000us
+# ** Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#    Time: 0 ps  Iteration: 0  Instance: /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_FIFO/U0/gconvfifo/inst_conv_fifo
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DATA_CAPTURE_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DATA_CAPTURE_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/disparity_out_0/disparity_out_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/disparity_out_0/disparity_out_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/load_bram_0/load_bram_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/load_bram_0/load_bram_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# Block Memory Generator CORE Generator module system.load_bram_0.load_bram_0.USER_LOGIC_I.bram_ref.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module system.load_bram_0.load_bram_0.USER_LOGIC_I.bram_search.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+add wave  \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/NUM_OF_ROWS_IN_BRAM \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/NUM_OF_WIN \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/VRES \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/HRES \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BRAM_DATA_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BRAM_WE_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BURST \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/window \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_MST_NATIVE_DATA_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_LENGTH_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_MST_AWIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_NUM_REG \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_SLV_DWIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/START_ADDR_REF \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/END_ADDR_REF \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/START_ADDR_SEARCH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/END_ADDR_SEARCH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BRAM_ADDR_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/load_bram_dout \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/load_bram_wr_en_fifo \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Clk \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Resetn \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_BE \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_RdCE \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_WrCE \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_Data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_RdAck \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_WrAck \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_Error \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstrd_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_be \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_type \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_lock \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_reset \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_cmdack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_cmplt \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_error \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_rearbitrate \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_cmd_timeout \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_d \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_rem \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_sof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_eof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_src_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_src_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstrd_dst_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstrd_dst_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_d \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_rem \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_src_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_src_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_sof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_eof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstwr_dst_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstwr_dst_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg0 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg1 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg2 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg3 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg4 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg_write_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg_read_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_ip2bus_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_read_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_write_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_ip2bus_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_write_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_read_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_write_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_read_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_write_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_read_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_byte_we \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_rd_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_wr_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_bus_lock \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_burst \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_ip2bus_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_xfer_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_xfer_reg_len \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_ip2bus_be \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_go \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_set_done \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_set_error \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_set_timeout \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_busy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_clr_go \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_rd_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_wr_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_reset \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_bus_lock \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_be \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_xfer_type \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_xfer_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_start_rd_llink \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_start_wr_llink \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llrd_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llrd_sm_dst_rdy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_src_rdy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_sof \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_eof \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_byte_cnt \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_fifo_valid_write_xfer \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_fifo_valid_read_xfer \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Reset \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_valid \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_data_out \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_empty \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/read_fifo_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/cama_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_axi_ready_to_rd \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_we \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_wr_en \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bram_busy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pa_wr_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/wnd_in_bram \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_mst_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_valid_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_data_out_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_empty_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/read_fifo_state_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_data_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_axi_ready_to_rd_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_we_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_data_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_wr_en_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_addr_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bram_busy_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pb_wr_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/wnd_in_bram_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_mst_length_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_ref_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_search_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_search_wr_en \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_ref_wr_en \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/en_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/we_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/addr_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/dout_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/en_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/we_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/addr_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/dout_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/go \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/busy_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/busy_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/finished_row
+add wave  \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/FIFO_RD_COUNT_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/FRAME_PIXEL_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/FRAME_PIXEL_HEIGHT \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DMAX \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/WMAX \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_MST_NATIVE_DATA_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_LENGTH_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_MST_AWIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_NUM_REG \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_SLV_DWIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_D_I \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_CLK_I \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/RESET_I \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_EN \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Clk \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Resetn \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_BE \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_RdCE \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_WrCE \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_Data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_RdAck \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_WrAck \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_Error \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstrd_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_be \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_type \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_lock \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_reset \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_cmdack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_cmplt \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_error \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_rearbitrate \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_cmd_timeout \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_d \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_rem \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_sof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_eof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_src_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_src_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstrd_dst_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstrd_dst_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_d \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_rem \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_src_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_src_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_sof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_eof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstwr_dst_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstwr_dst_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_en \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_rd_en \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_full \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_empty \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_fifo_full \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_rd_data_count \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_data_out \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_enable \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_row_wr_count \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_col_wr_count \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_xfer_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_xfer_reg_len \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg0 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg1 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg2 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg3 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg_write_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg_read_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_ip2bus_data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_read_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_write_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_ip2bus_data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_write_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_read_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_write_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_read_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_write_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_read_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_byte_we \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_rd_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_wr_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_bus_lock \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_burst \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_ip2bus_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_xfer_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_xfer_reg_len \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_ip2bus_be \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_go \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_state \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_set_done \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_set_error \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_set_timeout \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_busy \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_clr_go \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_rd_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_wr_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_reset \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_bus_lock \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_be \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_xfer_type \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_xfer_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_start_rd_llink \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_start_wr_llink \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llrd_sm_state \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llrd_sm_dst_rdy \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_state \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_src_rdy \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_sof \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_eof \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_byte_cnt \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_fifo_valid_write_xfer \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_fifo_valid_read_xfer \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Reset \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_sm_state
+do system_setup.do
+# Setting up simulation commands ... 
+# ********************************************************************** 
+# ********************************************************************** 
+# *** 
+# *** Simulation Setup Macros (system_setup.do) 
+# *** 
+# *** Because EDK did not create the testbench, the compile and load 
+# *** commands need changes to work with the user-generated testbench. 
+# *** For example, edit the testbench name in the vsim command. 
+# *** 
+# *** c => compile the design by running the EDK compile script. 
+# *** Assumes ISE and EDK libraries were compiled earlier 
+# *** for ModelSim. (see system.do) 
+# *** 
+# *** s => load the design for simulation. (ModelSim 'vsim' 
+# *** command with 'system') After loading the design, 
+# *** set up signal displays (optional) and run the simulation. 
+# *** (ModelSim 'run' command) 
+# *** 
+# *** l => set up signal list display and launch a list window. 
+# *** ModelSim 'add -list' commands are found in *_list.do 
+# *** scripts. (see system_list.do) 
+# *** 
+# *** w => set up signal wave display and launch a waveform window. 
+# *** ModelSim 'add -wave' commands are found in *_wave.do 
+# *** scripts. (see system_wave.do) 
+# *** 
+# *** clk => generate clock input stimulus 
+# *** 
+# *** rst => toggle reset ports and simulate 
+# *** 
+# *** h => print this message 
+# *** 
+# ********************************************************************** 
+# ********************************************************************** 
+c
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "load_bram_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "disparity_out_v1_00_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "clock_generator_0_v4_03_a".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Modifying C:\modeltech64_10.1c\modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module pxconv
+# 
+# Top level modules:
+# 	pxconv
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module PXBRAM
+# 
+# Top level modules:
+# 	PXBRAM
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module fifo
+# 
+# Top level modules:
+# 	fifo
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module Disp_Map_Calc
+# 
+# Top level modules:
+# 	Disp_Map_Calc
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Loading entity user_logic
+# -- Compiling entity load_bram
+# -- Compiling architecture IMP of load_bram
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading entity srl_fifo_f
+# -- Compiling entity user_logic
+# -- Compiling architecture IMP of user_logic
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package proc_common_pkg
+# -- Loading package ipif_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Loading entity soft_reset
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading package family_support
+# -- Loading entity axi_lite_ipif
+# -- Loading entity axi_master_burst_reset
+# -- Loading entity axi_master_burst_stbs_set
+# -- Loading entity axi_master_burst_first_stb_offset
+# -- Loading entity axi_master_burst_cmd_status
+# -- Loading entity axi_master_burst_strb_gen
+# -- Loading entity axi_master_burst_pcc
+# -- Loading entity srl_fifo_f
+# -- Loading entity axi_master_burst_fifo
+# -- Loading entity axi_master_burst_addr_cntl
+# -- Loading entity axi_master_burst_rdmux
+# -- Loading entity axi_master_burst_rddata_cntl
+# -- Loading entity axi_master_burst_wrdata_cntl
+# -- Loading entity axi_master_burst_rd_status_cntl
+# -- Loading entity axi_master_burst_wr_status_cntl
+# -- Loading entity axi_master_burst_skid_buf
+# -- Loading entity axi_master_burst_wr_demux
+# -- Loading entity axi_master_burst_skid2mm_buf
+# -- Loading entity axi_master_burst_rd_wr_cntlr
+# -- Loading entity axi_master_burst_rd_llink
+# -- Loading entity axi_master_burst_wr_llink
+# -- Loading entity axi_master_burst
+# -- Loading entity user_logic
+# -- Compiling entity disparity_out
+# -- Compiling architecture IMP of disparity_out
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity async_fifo_32_256
+# -- Compiling architecture async_fifo_32_256_a of async_fifo_32_256
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity fifo_generator_v9_2_bhv_as
+# -- Loading entity fifo_generator_v9_2_bhv_ss
+# -- Loading entity fifo_generator_v9_2_conv
+# -- Loading entity fifo_generator_v9_2
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity clock_generator
+# -- Compiling architecture STRUCTURE of clock_generator
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity bram_block_0_elaborate
+# -- Compiling architecture STRUCTURE of bram_block_0_elaborate
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity bram_block_1_elaborate
+# -- Compiling architecture STRUCTURE of bram_block_1_elaborate
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity bram_block_2_elaborate
+# -- Compiling architecture STRUCTURE of bram_block_2_elaborate
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_proc_sys_reset_0_wrapper
+# -- Compiling architecture STRUCTURE of system_proc_sys_reset_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_load_bram_0_wrapper
+# -- Compiling architecture STRUCTURE of system_load_bram_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_disparity_out_0_wrapper
+# -- Compiling architecture STRUCTURE of system_disparity_out_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_clock_generator_0_wrapper
+# -- Compiling architecture STRUCTURE of system_clock_generator_0_wrapper
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module system_axi4_0_wrapper
+# 
+# Top level modules:
+# 	system_axi4_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_bram_block_0_wrapper
+# -- Compiling architecture STRUCTURE of system_bram_block_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_axi_bram_ctrl_0_wrapper
+# -- Compiling architecture STRUCTURE of system_axi_bram_ctrl_0_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_bram_block_1_wrapper
+# -- Compiling architecture STRUCTURE of system_bram_block_1_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_bram_block_2_wrapper
+# -- Compiling architecture STRUCTURE of system_bram_block_2_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_axi_bram_ctrl_1_wrapper
+# -- Compiling architecture STRUCTURE of system_axi_bram_ctrl_1_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system_axi_bram_ctrl_2_wrapper
+# -- Compiling architecture STRUCTURE of system_axi_bram_ctrl_2_wrapper
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VCOMPONENTS
+# -- Compiling entity system
+# -- Compiling architecture STRUCTURE of system
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Skipping module glbl
+# 
+# Top level modules:
+# 	glbl
+# 1
+s
+# vsim +notimingchecks -L xilinxcorelib_ver -L secureip -L unisims_ver -L unimacro_ver -t ps -novopt system glbl 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading unisim.vcomponents
+# Loading work.system(structure)
+# Loading work.glbl
+# Loading work.system_proc_sys_reset_0_wrapper(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading proc_sys_reset_v3_00_a.proc_sys_reset(imp)
+# Loading proc_sys_reset_v3_00_a.upcnt_n(imp)
+# Loading proc_sys_reset_v3_00_a.lpf(imp)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.srl16(srl16_v)
+# Loading proc_sys_reset_v3_00_a.sequence(imp)
+# Loading work.system_load_bram_0_wrapper(structure)
+# Loading ieee.std_logic_unsigned(body)
+# Loading proc_common_v3_00_a.proc_common_pkg(body)
+# Loading proc_common_v3_00_a.ipif_pkg(body)
+# Loading ieee.numeric_std(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading proc_common_v3_00_a.family_support(body)
+# Loading load_bram_v1_00_a.load_bram(imp)
+# Loading axi_lite_ipif_v1_01_a.axi_lite_ipif(imp)
+# Loading axi_lite_ipif_v1_01_a.slave_attachment(imp)
+# Loading axi_lite_ipif_v1_01_a.address_decoder(imp)
+# Loading proc_common_v3_00_a.pselect_f(imp)
+# Loading axi_master_burst_v1_00_a.axi_master_burst(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_reset(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_cmd_status(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_first_stb_offset(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_stbs_set(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_wr_cntlr(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_pcc(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_strb_gen(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_addr_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rddata_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rdmux(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_status_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid_buf(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wrdata_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_status_cntl(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_fifo(imp)
+# Loading proc_common_v3_00_a.srl_fifo_f(imp)
+# Loading proc_common_v3_00_a.srl_fifo_rbu_f(imp)
+# Loading proc_common_v3_00_a.cntr_incr_decr_addn_f(imp)
+# Loading unisim.muxcy_l(muxcy_l_v)
+# Loading unisim.xorcy(xorcy_v)
+# Loading unisim.fds(fds_v)
+# Loading proc_common_v3_00_a.dynshreg_f(behavioral)
+# Loading unisim.srlc16e(srlc16e_v)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_skid2mm_buf(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_demux(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_rd_llink(implementation)
+# Loading axi_master_burst_v1_00_a.axi_master_burst_wr_llink(implementation)
+# Loading load_bram_v1_00_a.user_logic(imp)
+# Loading load_bram_v1_00_a.fifo
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_2
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_2_CONV_VER
+# Loading xilinxcorelib_ver.fifo_generator_v9_2_bhv_ver_as
+# Loading xilinxcorelib_ver.fifo_generator_v9_2_sync_stage
+# Loading load_bram_v1_00_a.pxconv
+# Loading load_bram_v1_00_a.PXBRAM
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_mem_module
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_output_stage
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_2_softecc_output_reg_stage
+# Loading load_bram_v1_00_a.Disp_Map_Calc
+# Loading work.system_disparity_out_0_wrapper(structure)
+# Loading disparity_out_v1_00_a.disparity_out(imp)
+# Loading proc_common_v3_00_a.soft_reset(implementation)
+# Loading unisim.fdrse(fdrse_v)
+# Loading disparity_out_v1_00_a.user_logic(imp)
+# Loading disparity_out_v1_00_a.async_fifo_32_256(async_fifo_32_256_a)
+# Loading xilinxcorelib.fifo_generator_v9_2(behavioral)
+# Loading xilinxcorelib.fifo_generator_v9_2_conv(behavioral)
+# Loading xilinxcorelib.fifo_generator_v9_2_bhv_as(behavioral)
+# Loading work.system_clock_generator_0_wrapper(structure)
+# Loading clock_generator_0_v4_03_a.clock_generator(structure)
+# Loading clock_generator_v4_03_a.pll_module(struct)
+# Loading unisim.pll_adv(pll_adv_v)
+# Loading unisim.bufg(bufg_v)
+# Loading work.system_axi4_0_wrapper
+# Loading axi_interconnect_v1_06_a.axi_interconnect
+# Loading axi_interconnect_v1_06_a.ict106_register_slice_bank
+# Loading axi_interconnect_v1_06_a.ict106_protocol_conv_bank
+# Loading axi_interconnect_v1_06_a.ict106_converter_bank
+# Loading axi_interconnect_v1_06_a.ict106_data_fifo_bank
+# Loading axi_interconnect_v1_06_a.ict106_axi_crossbar
+# Loading axi_interconnect_v1_06_a.ict106_axi_register_slice
+# Loading axi_interconnect_v1_06_a.ict106_axic_register_slice
+# Loading axi_interconnect_v1_06_a.ict106_axi_clock_converter
+# Loading axi_interconnect_v1_06_a.ict106_axi_data_fifo
+# Loading axi_interconnect_v1_06_a.ict106_crossbar
+# Loading axi_interconnect_v1_06_a.ict106_si_transactor
+# Loading axi_interconnect_v1_06_a.ict106_splitter
+# Loading axi_interconnect_v1_06_a.ict106_wdata_router
+# Loading axi_interconnect_v1_06_a.ict106_axic_reg_srl_fifo
+# Loading axi_interconnect_v1_06_a.ict106_addr_decoder
+# Loading axi_interconnect_v1_06_a.ict106_wdata_mux
+# Loading axi_interconnect_v1_06_a.ict106_addr_arbiter
+# Loading axi_interconnect_v1_06_a.ict106_decerr_slave
+# Loading axi_interconnect_v1_06_a.ict106_mux_enc
+# Loading axi_interconnect_v1_06_a.ict106_ndeep_srl
+# Loading axi_interconnect_v1_06_a.ict106_comparator_static
+# Loading unisims_ver.SRLC32E
+# Loading axi_interconnect_v1_06_a.ict106_carry_and
+# Loading unisims_ver.MUXCY
+# Loading work.system_bram_block_0_wrapper(structure)
+# Loading bram_block_0_elaborate_v1_00_a.bram_block_0_elaborate(structure)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_textio(body)
+# Loading unisim.ramb16bwer(ramb16bwer_v)
+# Loading work.system_axi_bram_ctrl_0_wrapper(structure)
+# Loading axi_bram_ctrl_v1_03_a.axi_bram_ctrl_funcs(body)
+# Loading axi_bram_ctrl_v1_03_a.axi_bram_ctrl(implementation)
+# Loading axi_bram_ctrl_v1_03_a.full_axi(implementation)
+# Loading axi_bram_ctrl_v1_03_a.wr_chnl(implementation)
+# Loading axi_bram_ctrl_v1_03_a.wrap_brst(implementation)
+# Loading axi_bram_ctrl_v1_03_a.ua_narrow(implementation)
+# Loading axi_bram_ctrl_v1_03_a.srl_fifo(imp)
+# Loading unisim.fdr(fdr_v)
+# Loading unisim.fdre(fdre_v)
+# Loading unisim.srl16e(srl16e_v)
+# Loading axi_bram_ctrl_v1_03_a.rd_chnl(implementation)
+# Loading work.system_bram_block_1_wrapper(structure)
+# Loading bram_block_1_elaborate_v1_00_a.bram_block_1_elaborate(structure)
+# Loading work.system_bram_block_2_wrapper(structure)
+# Loading bram_block_2_elaborate_v1_00_a.bram_block_2_elaborate(structure)
+# Loading work.system_axi_bram_ctrl_1_wrapper(structure)
+# Loading work.system_axi_bram_ctrl_2_wrapper(structure)
+# ** Warning: (vsim-8683) Uninitialized out port /system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_d(31 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# 
+# ** Warning: (vsim-8684) No drivers exist on out port /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_FIFO/U0/gconvfifo/inst_conv_fifo/DATA_COUNT(7 downto 0), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_FIFO/U0/DATA_COUNT(7 downto 0).
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /system/clock_generator_0/clock_generator_0/CLKFBOUT has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# ** Warning: (vsim-8683) Uninitialized out port /system/clock_generator_0/clock_generator_0/PSDONE has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# 1
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/system/zio'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/system/rzq'.
+# Executing ONERROR command at macro ./wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_we_n'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_udqs_n'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_udqs'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_udm'.
+# Executing ONERROR command at macro ./wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_ras_n'.
+# Executing ONERROR command at macro ./wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_odt'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_ldm'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_dqs_n'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_dqs'.
+# Executing ONERROR command at macro ./wave.do line 24
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_dq'.
+# Executing ONERROR command at macro ./wave.do line 26
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_clk_n'.
+# Executing ONERROR command at macro ./wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_clk'.
+# Executing ONERROR command at macro ./wave.do line 30
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_cke'.
+# Executing ONERROR command at macro ./wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_cas_n'.
+# Executing ONERROR command at macro ./wave.do line 34
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_ba'.
+# Executing ONERROR command at macro ./wave.do line 36
+# ** Error: (vish-4014) No objects found matching '/system/mcbx_dram_addr'.
+# Executing ONERROR command at macro ./wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/sysclk_2x'.
+# Executing ONERROR command at macro ./wave.do line 148
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/sysclk_2x_180'.
+# Executing ONERROR command at macro ./wave.do line 149
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/pll_ce_0'.
+# Executing ONERROR command at macro ./wave.do line 151
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/pll_ce_90'.
+# Executing ONERROR command at macro ./wave.do line 153
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/pll_lock'.
+# Executing ONERROR command at macro ./wave.do line 155
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/sys_rst'.
+# Executing ONERROR command at macro ./wave.do line 157
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_addr'.
+# Executing ONERROR command at macro ./wave.do line 159
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_ba'.
+# Executing ONERROR command at macro ./wave.do line 161
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_ras_n'.
+# Executing ONERROR command at macro ./wave.do line 163
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_cas_n'.
+# Executing ONERROR command at macro ./wave.do line 165
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_we_n'.
+# Executing ONERROR command at macro ./wave.do line 167
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_cke'.
+# Executing ONERROR command at macro ./wave.do line 169
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_clk'.
+# Executing ONERROR command at macro ./wave.do line 171
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_clk_n'.
+# Executing ONERROR command at macro ./wave.do line 173
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_dq'.
+# Executing ONERROR command at macro ./wave.do line 175
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_dqs'.
+# Executing ONERROR command at macro ./wave.do line 177
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_dqs_n'.
+# Executing ONERROR command at macro ./wave.do line 179
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_udqs'.
+# Executing ONERROR command at macro ./wave.do line 181
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_udqs_n'.
+# Executing ONERROR command at macro ./wave.do line 183
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_udm'.
+# Executing ONERROR command at macro ./wave.do line 185
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_ldm'.
+# Executing ONERROR command at macro ./wave.do line 187
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/mcbx_dram_odt'.
+# Executing ONERROR command at macro ./wave.do line 189
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/rzq'.
+# Executing ONERROR command at macro ./wave.do line 191
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/zio'.
+# Executing ONERROR command at macro ./wave.do line 193
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/ui_clk'.
+# Executing ONERROR command at macro ./wave.do line 195
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_awready'.
+# Executing ONERROR command at macro ./wave.do line 197
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_wready'.
+# Executing ONERROR command at macro ./wave.do line 199
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_bid'.
+# Executing ONERROR command at macro ./wave.do line 201
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_bresp'.
+# Executing ONERROR command at macro ./wave.do line 203
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_bvalid'.
+# Executing ONERROR command at macro ./wave.do line 205
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_arready'.
+# Executing ONERROR command at macro ./wave.do line 207
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_rid'.
+# Executing ONERROR command at macro ./wave.do line 209
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_rdata'.
+# Executing ONERROR command at macro ./wave.do line 211
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_rresp'.
+# Executing ONERROR command at macro ./wave.do line 213
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_rlast'.
+# Executing ONERROR command at macro ./wave.do line 215
+# ** Error: (vish-4014) No objects found matching '/system/MCB_DDR2/s0_axi_rvalid'.
+# Executing ONERROR command at macro ./wave.do line 217
+add wave  \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/NUM_OF_ROWS_IN_BRAM \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/NUM_OF_WIN \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/VRES \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/HRES \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BRAM_DATA_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BRAM_WE_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BURST \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/window \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_MST_NATIVE_DATA_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_LENGTH_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_MST_AWIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_NUM_REG \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/C_SLV_DWIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/START_ADDR_REF \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/END_ADDR_REF \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/START_ADDR_SEARCH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/END_ADDR_SEARCH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/BRAM_ADDR_WIDTH \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/load_bram_dout \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/load_bram_wr_en_fifo \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Clk \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Resetn \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_BE \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_RdCE \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_WrCE \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_Data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_RdAck \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_WrAck \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/IP2Bus_Error \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstrd_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_be \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_type \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_lock \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mst_reset \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_cmdack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_cmplt \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_error \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_rearbitrate \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mst_cmd_timeout \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_d \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_rem \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_sof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_eof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_src_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstrd_src_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstrd_dst_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstrd_dst_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_d \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_rem \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_src_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_src_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_sof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/ip2bus_mstwr_eof_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstwr_dst_rdy_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bus2ip_mstwr_dst_dsc_n \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg0 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg1 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg2 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg3 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg4 \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg_write_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_reg_read_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_ip2bus_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_read_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/slv_write_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_ip2bus_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_write_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_read_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_write_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg_read_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_write_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_read_ack \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_reg \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_byte_we \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_rd_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_wr_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_bus_lock \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cntl_burst \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_ip2bus_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_xfer_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_xfer_reg_len \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_ip2bus_be \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_go \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_set_done \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_set_error \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_set_timeout \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_busy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_clr_go \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_rd_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_wr_req \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_reset \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_bus_lock \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_be \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_xfer_type \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_xfer_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_start_rd_llink \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_cmd_sm_start_wr_llink \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llrd_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llrd_sm_dst_rdy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_src_rdy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_sof \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_sm_eof \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_llwr_byte_cnt \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_fifo_valid_write_xfer \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/mst_fifo_valid_read_xfer \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/Bus2IP_Reset \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_valid \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_data_out \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_empty \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/read_fifo_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/cama_sm_state \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_axi_ready_to_rd \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_we \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_data \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_wr_en \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bram_busy \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pa_wr_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/wnd_in_bram \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_mst_length \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_valid_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_data_out_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_empty_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/read_fifo_state_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/axi_to_pxconv_data_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_axi_ready_to_rd_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_we_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_data_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_wr_en_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_to_bram_addr_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/bram_busy_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pb_wr_addr \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/wnd_in_bram_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/pxconv_mst_length_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_ref_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_search_sel \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_search_wr_en \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/fifo_ref_wr_en \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/en_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/we_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/addr_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/dout_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/en_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/we_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/addr_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/dout_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/go \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/busy_ref \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/busy_search \
+sim:/system/load_bram_0/load_bram_0/USER_LOGIC_I/finished_row
+add wave  \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/FIFO_RD_COUNT_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/FRAME_PIXEL_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/FRAME_PIXEL_HEIGHT \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DMAX \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/WMAX \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_MST_NATIVE_DATA_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_LENGTH_WIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_MST_AWIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_NUM_REG \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/C_SLV_DWIDTH \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_D_I \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_CLK_I \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/RESET_I \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_EN \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Clk \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Resetn \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_BE \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_RdCE \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_WrCE \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_Data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_RdAck \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_WrAck \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/IP2Bus_Error \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstrd_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_be \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_type \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_lock \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mst_reset \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_cmdack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_cmplt \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_error \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_rearbitrate \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mst_cmd_timeout \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_d \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_rem \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_sof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_eof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_src_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstrd_src_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstrd_dst_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstrd_dst_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_d \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_rem \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_src_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_src_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_sof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/ip2bus_mstwr_eof_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstwr_dst_rdy_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/bus2ip_mstwr_dst_dsc_n \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_en \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_rd_en \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_full \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_empty \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_fifo_full \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_rd_data_count \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_data_out \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_enable \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_wr_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_row_wr_count \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_col_wr_count \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_xfer_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_xfer_reg_len \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg0 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg1 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg2 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg3 \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg_write_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_reg_read_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_ip2bus_data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_read_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/slv_write_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_ip2bus_data \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_write_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_read_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_write_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg_read_sel \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_write_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_read_ack \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_reg \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_byte_we \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_rd_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_wr_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_bus_lock \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cntl_burst \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_ip2bus_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_xfer_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_xfer_reg_len \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_ip2bus_be \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_go \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_state \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_set_done \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_set_error \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_set_timeout \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_busy \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_clr_go \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_rd_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_wr_req \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_reset \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_bus_lock \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_addr \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_ip2bus_be \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_xfer_type \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_xfer_length \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_start_rd_llink \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_cmd_sm_start_wr_llink \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llrd_sm_state \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llrd_sm_dst_rdy \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_state \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_src_rdy \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_sof \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_sm_eof \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_llwr_byte_cnt \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_fifo_valid_write_xfer \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/mst_fifo_valid_read_xfer \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/Bus2IP_Reset \
+sim:/system/disparity_out_0/disparity_out_0/USER_LOGIC_I/disp_sm_state
+clk; rst; run 2000us
+# ** Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#    Time: 0 ps  Iteration: 0  Instance: /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DISP_FIFO/U0/gconvfifo/inst_conv_fifo
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DATA_CAPTURE_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Region: /system/disparity_out_0/disparity_out_0/USER_LOGIC_I/DATA_CAPTURE_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/INFERRED_GEN
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/disparity_out_0/disparity_out_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/disparity_out_0/disparity_out_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/load_bram_0/load_bram_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_WR_DATA_CNTL
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /system/load_bram_0/load_bram_0/AXI_MASTER_BURST_I/I_RD_WR_CNTRL_MODULE/I_RD_DATA_CNTL
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# Block Memory Generator CORE Generator module system.load_bram_0.load_bram_0.USER_LOGIC_I.bram_ref.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Block Memory Generator CORE Generator module system.load_bram_0.load_bram_0.USER_LOGIC_I.bram_search.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 345 ns  Iteration: 14  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 345 ns  Iteration: 14  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 345 ns  Iteration: 14  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_RD_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 345 ns  Iteration: 14  Instance: /system/axi_bram_ctrl_2/axi_bram_ctrl_2/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 345 ns  Iteration: 14  Instance: /system/axi_bram_ctrl_1/axi_bram_ctrl_1/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 345 ns  Iteration: 14  Instance: /system/axi_bram_ctrl_0/axi_bram_ctrl_0/GEN_AXI4/I_FULL_AXI/I_WR_CHNL/GEN_UA_NARROW/I_UA_NARROW

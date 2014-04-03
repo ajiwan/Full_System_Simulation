@@ -1,0 +1,183 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\fpga\XPS\Full_System\simulation\behavioral
+vDisp_Map_Calc
+Z1 !s10a 1396550960
+Il]T?b^C[mW9[S?QRfS@UW1
+V[gzTEID`ddd1fU@HfUD<`1
+Z2 dC:\fpga\XPS\Full_System\simulation\behavioral
+Z3 w1396550960
+8C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/bram_dm.v
+FC:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/bram_dm.v
+L0 21
+Z4 OL;L;10.1c;51
+r1
+31
+Z5 o-work load_bram_v1_00_a -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z6 !s92 -work load_bram_v1_00_a +incdir+C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/+C:/fpga/XPS/Full_System/pcores/+C:/fpga/XPS/Vmod_in_HDMI_100MHz/pcores/+C:/fpga/XPS/disparity_full_sys/pcores/+C:/Xilinx/14.2/ISE_DS/edk_user_repository/MyProcessorIPLib/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/ -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@disp_@map_@calc
+!s100 eDgW;<]K2k]7R`1;g7k981
+!s108 1396553830.496000
+!s107 C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/bram_dm.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|load_bram_v1_00_a|C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/bram_dm.v|+incdir+C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/+C:/fpga/XPS/Full_System/pcores/+C:/fpga/XPS/Vmod_in_HDMI_100MHz/pcores/+C:/fpga/XPS/disparity_full_sys/pcores/+C:/Xilinx/14.2/ISE_DS/edk_user_repository/MyProcessorIPLib/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/|
+!i10b 1
+!s85 0
+vfifo
+R1
+I^G6FndNY4hGN4h`jDlKQk2
+V8gd4BZ3g7k<7bQRGfIm2P3
+R2
+R3
+8C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/fifo.v
+FC:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/fifo.v
+L0 39
+R4
+r1
+31
+R5
+R6
+!s100 @_8`3:9`5@3a`ei3:7E:P3
+!s108 1396553830.279000
+!s107 C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/fifo.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|load_bram_v1_00_a|C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/fifo.v|+incdir+C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/+C:/fpga/XPS/Full_System/pcores/+C:/fpga/XPS/Vmod_in_HDMI_100MHz/pcores/+C:/fpga/XPS/disparity_full_sys/pcores/+C:/Xilinx/14.2/ISE_DS/edk_user_repository/MyProcessorIPLib/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/|
+!i10b 1
+!s85 0
+Eload_bram
+Z7 w1396550463
+Z8 DEx4 work 10 user_logic 0 22 VFkCozoj:?ihhOHbYlDb^3
+Z9 DEx24 axi_master_burst_v1_00_a 16 axi_master_burst 0 22 1lM9P7LjEKhL?`AX_0M@a0
+Z10 DPx19 proc_common_v3_00_a 14 family_support 0 22 1X`TZZQ9:T0cnjOd0MNeJ3
+Z11 DPx8 synopsys 10 attributes 0 22 J^T`lPA_8_J<l8kQiVE]>2
+Z12 DPx4 ieee 14 std_logic_misc 0 22 >dU:RInm^_6_mBJ^<6QGY2
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z14 DEx21 axi_lite_ipif_v1_01_a 13 axi_lite_ipif 0 22 nZgil<HVQHE:M7E`S`JUA2
+Z15 DPx19 proc_common_v3_00_a 8 ipif_pkg 0 22 3LB;^iIf3Oh9Md2;[ng<V1
+Z16 DPx19 proc_common_v3_00_a 15 proc_common_pkg 0 22 nVA2gg8b>fmcdoI3?l]3Q1
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z18 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z19 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z20 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R2
+Z21 8C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/load_bram.vhd
+Z22 FC:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/load_bram.vhd
+l0
+L155
+VKiAaEVE8gS8M0AZ1jehzV3
+!s100 VePFAfB2=Mj@lIfh>X7N32
+Z23 OL;C;10.1c;51
+31
+!i10b 1
+Z24 !s108 1396556538.693000
+Z25 !s90 -reportprogress|300|-novopt|-93|-work|load_bram_v1_00_a|C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/load_bram.vhd|
+Z26 !s107 C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/load_bram.vhd|
+Z27 o-93 -work load_bram_v1_00_a
+Z28 tExplicit 1
+Aimp
+R8
+R9
+R14
+R10
+R11
+R12
+R13
+R15
+R16
+R17
+R18
+R19
+R20
+Z29 DEx4 work 9 load_bram 0 22 KiAaEVE8gS8M0AZ1jehzV3
+l392
+L279
+Z30 Vb8HSTe9U>TdA0_4[PL]>X1
+Z31 !s100 >Da_GK@BH@neIA^mQQNUJ3
+R23
+31
+!i10b 1
+R24
+R25
+R26
+R27
+R28
+vPXBRAM
+R1
+Ie>1e0zL0cUQZo;Ti[V^;E3
+VLkU9C49@_@c<jk4Mm:D_a1
+R2
+R3
+8C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/PXBRAM.v
+FC:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/PXBRAM.v
+L0 39
+R4
+r1
+31
+R5
+R6
+n@p@x@b@r@a@m
+!s100 nRU7HWAR=9X90A0^D`ghE1
+!s108 1396553830.069000
+!s107 C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/PXBRAM.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|load_bram_v1_00_a|C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/PXBRAM.v|+incdir+C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/+C:/fpga/XPS/Full_System/pcores/+C:/fpga/XPS/Vmod_in_HDMI_100MHz/pcores/+C:/fpga/XPS/disparity_full_sys/pcores/+C:/Xilinx/14.2/ISE_DS/edk_user_repository/MyProcessorIPLib/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/|
+!i10b 1
+!s85 0
+vpxconv
+InlP:jHXb2X^G[bP?;NZ^_1
+VQc6LBSQ;;>K=Koa5]YEX:3
+R2
+w1396550087
+8C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/pxconv.v
+FC:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/pxconv.v
+L0 1
+R4
+r1
+31
+R5
+R6
+!s10a 1396550087
+!s100 dMQ2PUL8i;3`<]SBX:UoA0
+!s108 1396553829.861000
+!s107 C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/pxconv.v|
+!s90 -reportprogress|300|-novopt|-incr|-work|load_bram_v1_00_a|C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/pxconv.v|+incdir+C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/verilog/+C:/fpga/XPS/Full_System/pcores/+C:/fpga/XPS/Vmod_in_HDMI_100MHz/pcores/+C:/fpga/XPS/disparity_full_sys/pcores/+C:/Xilinx/14.2/ISE_DS/edk_user_repository/MyProcessorIPLib/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/+C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/|
+!i10b 1
+!s85 0
+Euser_logic
+Z32 w1396550641
+R17
+R18
+R19
+R20
+R2
+Z33 8C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/user_logic.vhd
+Z34 FC:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/user_logic.vhd
+l0
+L117
+VVFkCozoj:?ihhOHbYlDb^3
+R23
+31
+Z35 !s108 1396556538.347000
+Z36 !s90 -reportprogress|300|-novopt|-93|-work|load_bram_v1_00_a|C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/user_logic.vhd|
+Z37 !s107 C:/fpga/XPS/Full_System/pcores/load_bram_v1_00_a/hdl/vhdl/user_logic.vhd|
+R27
+R28
+!s100 [oBR5DKS?4_7GC6BJ;VD^2
+!i10b 1
+Aimp
+R17
+R18
+R19
+R20
+R8
+l428
+L212
+V=:mnD>[_<Sj1c^`1YRAMP2
+!s100 >`X89`n33_M^DJVc5J_ZL0
+R23
+31
+R35
+R36
+R37
+R27
+R28
+!i10b 1

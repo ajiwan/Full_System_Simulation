@@ -1,0 +1,18 @@
+// Mem file initialization records.
+//
+// Release 14.1 - Data2MEM P.28xd, build 2.8 Mar 16, 2012
+// Copyright (c) 1995-2014 Xilinx, Inc.  All rights reserved.
+//
+// Command: data2mem -bm system_sim.bmm -bd C:\fpga\XPS\Full_System\bootloops\microblaze_0.elf tag microblaze_0 -bx C:\fpga\XPS\Full_System\simulation\behavioral -u -p "xc6slx45csg324-3"
+//
+// Created on Thursday April 03, 2014 - 03:36:57 pm, from:
+//
+//     Map file     - system_sim.bmm
+//     Data file(s) - C:\fpga\XPS\Full_System\bootloops\microblaze_0.elf
+//
+// Address space 'microblaze_0.microblaze_0_bram_block_combined', bit lane [20:20].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    0

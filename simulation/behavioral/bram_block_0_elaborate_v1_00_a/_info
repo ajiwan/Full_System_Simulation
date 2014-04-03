@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\fpga\XPS\Full_System\simulation\behavioral
+Ebram_block_0_elaborate
+Z1 w1396556232
+Z2 DPx6 unisim 11 vcomponents 0 22 8T5IogZ]Om:_d>aF`2QCV0
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\fpga\XPS\Full_System\simulation\behavioral
+Z6 8elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd
+Z7 Felaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd
+l0
+L10
+VNm0zlaK0n8h8AABSK3lC13
+!s100 @^HH:VG`h:ZDFc[0MnOOz3
+Z8 OL;C;10.1c;51
+31
+!i10b 1
+Z9 !s108 1396556542.416000
+Z10 !s90 -reportprogress|300|-novopt|-93|-work|bram_block_0_elaborate_v1_00_a|elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd|
+Z11 !s107 elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd|
+Z12 o-93 -work bram_block_0_elaborate_v1_00_a
+Z13 tExplicit 1
+Astructure
+R2
+R3
+R4
+DEx4 work 22 bram_block_0_elaborate 0 22 Nm0zlaK0n8h8AABSK3lC13
+l266
+L36
+VCPgh4OC1^cmYed>TC0JVX3
+!s100 eS]P?d1G?c3mi;lBRU7R22
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13

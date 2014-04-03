@@ -1,0 +1,136 @@
+
+# ##############################################################################
+# Created by Base System Builder Wizard for Xilinx EDK 14.2 Build EDK_P.28xd
+# Thu Jan 24 11:53:27 2013
+# Target Board:  digilent atlys Rev C
+# Family:    spartan6
+# Device:    xc6slx45
+# Package:   csg324
+# Speed Grade:  -3
+# ##############################################################################
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 0
+ PORT GCLK = GCLK, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER C_EXT_RESET_HIGH = 0
+ PORT Dcm_locked = proc_sys_reset_0_Dcm_locked
+ PORT Slowest_sync_clk = clk_100_0000MHzPLL0
+ PORT Interconnect_aresetn = proc_sys_reset_0_Interconnect_aresetn
+ PORT Ext_Reset_In = RESET
+ PORT BUS_STRUCT_RESET = proc_sys_reset_0_BUS_STRUCT_RESET
+END
+
+BEGIN load_bram
+ PARAMETER INSTANCE = load_bram_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x73200000
+ PARAMETER C_HIGHADDR = 0x7320ffff
+ BUS_INTERFACE M_AXI = axi4_0
+ PORT S_AXI_ACLK = clk_100_0000MHzPLL0
+ PORT m_axi_aclk = clk_100_0000MHzPLL0
+ PORT load_bram_dout = load_bram_0_load_bram_dout
+ PORT load_bram_wr_en_fifo = load_bram_0_load_bram_wr_en_fifo
+END
+
+BEGIN disparity_out
+ PARAMETER INSTANCE = disparity_out_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x7b000000
+ PARAMETER C_HIGHADDR = 0x7b00ffff
+ BUS_INTERFACE M_AXI = axi4_0
+ PORT S_AXI_ACLK = clk_100_0000MHzPLL0
+ PORT m_axi_aclk = clk_100_0000MHzPLL0
+ PORT DISP_D_I = load_bram_0_load_bram_dout
+ PORT DISP_EN = load_bram_0_load_bram_wr_en_fifo
+ PORT DISP_CLK_I = clk_100_0000MHzPLL0
+ PORT RESET_I = proc_sys_reset_0_BUS_STRUCT_RESET
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER HW_VER = 4.03.a
+ PARAMETER C_EXT_RESET_HIGH = 0
+ PARAMETER C_CLKIN_FREQ = 100000000
+ PARAMETER C_CLKOUT0_FREQ = 600000000
+ PARAMETER C_CLKOUT0_GROUP = PLL0
+ PARAMETER C_CLKOUT0_BUF = FALSE
+ PARAMETER C_CLKOUT1_FREQ = 600000000
+ PARAMETER C_CLKOUT1_PHASE = 180
+ PARAMETER C_CLKOUT1_GROUP = PLL0
+ PARAMETER C_CLKOUT1_BUF = FALSE
+ PARAMETER C_CLKOUT2_FREQ = 100000000
+ PARAMETER C_CLKOUT2_GROUP = PLL0
+ PARAMETER C_CLKOUT3_FREQ = 25000000
+ PARAMETER C_CLKOUT4_FREQ = 24000000
+ PARAMETER C_CLKOUT5_FREQ = 24000000
+ PARAMETER C_CLKOUT5_PHASE = 180
+ PORT LOCKED = proc_sys_reset_0_Dcm_locked
+ PORT CLKOUT2 = clk_100_0000MHzPLL0
+ PORT RST = RESET
+ PORT CLKIN = GCLK
+END
+
+BEGIN axi_interconnect
+ PARAMETER INSTANCE = axi4_0
+ PARAMETER HW_VER = 1.06.a
+ PORT interconnect_aclk = clk_100_0000MHzPLL0
+ PORT INTERCONNECT_ARESETN = proc_sys_reset_0_Interconnect_aresetn
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = axi_bram_ctrl_0_BRAM_PORTA
+END
+
+BEGIN axi_bram_ctrl
+ PARAMETER INSTANCE = axi_bram_ctrl_0
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_S_AXI_BASEADDR = 0xA0000000
+ PARAMETER C_S_AXI_HIGHADDR = 0xA000FFFF
+ PARAMETER C_INTERCONNECT_S_AXI_MASTERS = disparity_out_0.M_AXI & load_bram_0.M_AXI
+ BUS_INTERFACE S_AXI = axi4_0
+ BUS_INTERFACE BRAM_PORTA = axi_bram_ctrl_0_BRAM_PORTA
+ PORT S_AXI_ACLK = clk_100_0000MHzPLL0
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_1
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = axi_bram_ctrl_1_BRAM_PORTA
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_2
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = axi_bram_ctrl_2_BRAM_PORTA
+END
+
+BEGIN axi_bram_ctrl
+ PARAMETER INSTANCE = axi_bram_ctrl_1
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_S_AXI_BASEADDR = 0xA0100000
+ PARAMETER C_S_AXI_HIGHADDR = 0xA010FFFF
+ PARAMETER C_INTERCONNECT_S_AXI_MASTERS = load_bram_0.M_AXI & disparity_out_0.M_AXI
+ BUS_INTERFACE S_AXI = axi4_0
+ BUS_INTERFACE BRAM_PORTA = axi_bram_ctrl_1_BRAM_PORTA
+ PORT S_AXI_ACLK = clk_100_0000MHzPLL0
+END
+
+BEGIN axi_bram_ctrl
+ PARAMETER INSTANCE = axi_bram_ctrl_2
+ PARAMETER HW_VER = 1.03.a
+ PARAMETER C_S_AXI_BASEADDR = 0xA0400000
+ PARAMETER C_S_AXI_HIGHADDR = 0xA040FFFF
+ PARAMETER C_INTERCONNECT_S_AXI_MASTERS = disparity_out_0.M_AXI & load_bram_0.M_AXI
+ BUS_INTERFACE S_AXI = axi4_0
+ BUS_INTERFACE BRAM_PORTA = axi_bram_ctrl_2_BRAM_PORTA
+ PORT S_AXI_ACLK = clk_100_0000MHzPLL0
+END
+

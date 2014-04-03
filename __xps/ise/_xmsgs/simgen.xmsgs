@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="EDK" num="2343" delta="old" >Search path <arg fmt="%s" index="1">C:\fpga\XPS\</arg> directly contains pcores directory. Search path should point to a directory two levels above pcores.</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_BASEFAMILY</arg> value to <arg fmt="%s" index="6">spartan6</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 80</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">bram_block_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x10000</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">bram_block_1</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x10000</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">bram_block_2</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x10000</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_RANGE_CHECK</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 148</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_0.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_1.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_2.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_3.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_4.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_5.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_6.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_7.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_8.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_9.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_10.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_11.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_12.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_13.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_14.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_15.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_16.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_17.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_18.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_19.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_20.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_21.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_22.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_23.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_24.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_25.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_26.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_27.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_28.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_29.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_30.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_0_combined_31.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_0.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_1.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_2.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_3.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_4.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_5.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_6.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_7.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_8.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_9.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_10.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_11.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_12.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_13.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_14.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_15.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_16.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_17.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_18.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_19.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_20.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_21.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_22.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_23.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_24.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_25.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_26.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_27.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_28.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_29.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_30.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_1_combined_31.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_0.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_1.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_2.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_3.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_4.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_5.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_6.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_7.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_8.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_9.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_10.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_11.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_12.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_13.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_14.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_15.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_16.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_17.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_18.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_19.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_20.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_21.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_22.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_23.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_24.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_25.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_26.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_27.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_28.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_29.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_30.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="3407" delta="new" >Elf is not specified for bram initialization. Created empty <arg fmt="%s" index="1">bram_block_2_combined_31.mem</arg> file.
+</msg>
+
+<msg type="warning" file="EDK" num="504" delta="new" >(GLOBAL) - atleast 1 toplevel output/input needs to be defined!
+</msg>
+
+</messages>
+
